@@ -10,19 +10,22 @@ const Profile = () => {
         <div className='p-4'>
             <div className='relative flex mt-10 md:mt-3 lg:mt-5 mx-6 mb-7 '>
 
-                
+
                 <img className='h-20 w-20 rounded-full' src="/dp2.jpg" alt='dp' srcset="" />
                 <div className='mx-2 mt-2'>
                     <div className='font-bold text-lg'>Hi Mike,</div>
                     <div className='text-gray-400 text-xs'>welcome back</div>
                 </div>
-                <Badge className='block absolute right-0' color="primary" variant="dot">
-                    <NotificationsIcon
-                        sx={{
-                            color: 'gray'
-                        }}
-                    />
-                </Badge>
+                <div className='block md:hidden absolute right-0'>
+                    <Badge color="primary" variant="dot">
+                        <NotificationsIcon
+                            sx={{
+                                color: 'gray'
+                            }}
+                        />
+                    </Badge>
+                </div>
+
             </div>
 
             <div className='mx-6'>
