@@ -7,7 +7,7 @@ import ListIcon from '@mui/icons-material/List';
 import PersonIcon from '@mui/icons-material/Person';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import LogoutIcon from '@mui/icons-material/Logout';
-
+import Badge from '@mui/material/Badge';
 
 
 const NavbarSide = () => {
@@ -88,11 +88,14 @@ const NavbarSide = () => {
                     <ul className='absolute bottom-4'>
                         <li>
                             <a className='flex items-center p-2' href="">
-                                <NotificationsIcon
-                                    sx={{
-                                        color: 'gray'
-                                    }}
-                                />
+                                <Badge color="primary" variant="dot">
+                                    <NotificationsIcon
+                                        sx={{
+                                            color: 'gray'
+                                        }}
+                                    />
+                                </Badge>
+
                             </a>
                         </li>
                         <li>
