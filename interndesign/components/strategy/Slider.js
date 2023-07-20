@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect,useState } from 'react'
 
 const Slider = (props) => {
-    const [val,setVal]=useState('50%');
+    const [val,setVal]=useState('12%');
 
     const onchange =() => {
         console.log(val);

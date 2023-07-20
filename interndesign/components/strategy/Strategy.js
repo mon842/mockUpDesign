@@ -2,12 +2,16 @@ import React from 'react'
 import Slider from './Slider'
 import Percentage from './Percentage'
 import Notice from './Notice'
+import { Roboto_Slab } from 'next/font/google'
+
+const robo = Roboto_Slab({ subsets: ['latin'] })
+
 
 const Strategy = () => {
     const d = `View Help docs >`
     return (
         <div className='mb-20 p-5 '>
-            <p className='my-10 font-semibold'>Retirement Stratergy</p>
+            <p className={` ${robo.className} my-10 font-semibold`}>Retirement Stratergy</p>
             <Slider txt={'Employee contribution'} />
             <Slider txt={'Retirement Age'} />
             <p className='w-full my-6 bg-gray-200 h-1 '></p>
