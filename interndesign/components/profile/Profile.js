@@ -22,7 +22,7 @@ const Profile = () => {
                     <div className='font-bold text-lg'>Hi Mike,</div>
                     <div className='text-gray-400 text-xs'>welcome back</div>
                 </div>
-                <Badge className='block md:hidden absolute right-0' color="primary" variant="dot">
+                <Badge className='block md:hidden md:absolute md:right-0' color="primary" variant="dot">
                     <NotificationsIcon
                         sx={{
                             color: 'gray'
